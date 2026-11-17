@@ -107,14 +107,12 @@ glimpse(sports)
 a_data <- fairness %>%
   mutate(
     group = gender,
-    has_outcome =
-  readmit_30_days == 1
+    has_outcome = readmit_30_days == 1
   )
 
 a_data %>%
   count(group, has_outcome) %>%
   print(n = Inf)
-
 ## ---- a0-check ----
 # Check (don't change): prints PASS or TO DO with a hint.
 check("A0",

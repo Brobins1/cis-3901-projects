@@ -1,13 +1,13 @@
 ---
-title: "Sports Data: your title here"
-author: "Your Name"
+title: "NFL Combine Performance by Position"
+author: "Aubree Robinson"
 format: revealjs
 # The oral presentation (Fri, Dec 4) is about 7 minutes: plan about 1 minute per slide.
 ---
 
 ## Question
 
-Your question about your sport, and the groups you compare.
+How do NFL Combine performance measures differ across player positions, and which positions tend to have the fastest 40-yard dash times and highest vertical jumps?
 
 ## Main figure
 
@@ -22,8 +22,8 @@ my_data <- read_csv("../data/tidy/your_file.csv")
 
 ## What it shows
 
-The patterns and differences that the figure shows.
+The figure shows a negative relationship between 40-yard dash time and vertical jump height. Positions such as wide receivers (WR), running backs (RB), and cornerbacks (CB) generally have faster dash times and higher vertical jumps, while offensive linemen tend to have slower dash times and lower vertical jumps. The position centers summarize the average performance for each group.
 
 ## Limitations
 
-Provenance, small groups, and what the data cannot tell us.
+The data come from an NFL Combine dataset, with one row representing one player. Some positions have fewer players than others, so averages for smaller groups may be less reliable. The data cannot tell us why positions differ, whether training caused the differences, or how combine performance translates to success in NFL games.

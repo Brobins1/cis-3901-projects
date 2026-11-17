@@ -1,0 +1,114 @@
+---
+# WRITE: What is this about, and who made it? (a title that names your topic)
+title: "Gender Differences in 30-Day Hospital Readmissions"
+author: "Aubree Robinson "
+format:
+  revealjs:
+    embed-resources: true
+execute:
+  echo: false
+  warning: false
+  message: false
+---
+
+<!--
+Edit the code in the script. The report and the slides only read it.
+Your words (findings, headlines, limits) live in the report and the slides.
+
+How these slides work
+- The code lives in scripts/gp13_scales_facets.R. No code is pasted here:
+  code typed into a chunk here is ignored on render (the chunk runs the
+  script's code). Fix plots in the script.
+- A plot appears by naming its chunk: copy a figure chunk below and change
+  ref.label to the chunk's name in the script (a1, a2, a3-chosen, a4, a5,
+  b1, b2, b3, b4, b5).
+- At least 4–5 slides; more are welcome. Copy a "##" block to add one.
+- Replace each WRITE: line with your own words, and each fig-alt with one
+  sentence describing YOUR plot.
+- No speaker notes: anything in "::: notes" is public on the web. Keep it
+  out.
+-->
+
+```{r}
+#| label: project-root
+#| include: false
+# The slides run from presentations/; this makes the code run from the
+# project folder, so the script's paths (data/...) work here too.
+knitr::opts_knit$set(root.dir = normalizePath(".."))
+```
+
+```{r}
+#| label: read-script
+#| include: false
+knitr::read_chunk("scripts/gp13_scales_facets.R")
+```
+
+```{r}
+#| label: run-script
+#| include: false
+#| ref.label:
+#|   - setup
+#|   - helpers
+#|   - data
+#|   - a0
+#|   - a1
+#|   - a2
+#|   - a3
+#|   - a3-chosen
+#|   - a4
+#|   - a5
+#|   - b1
+#|   - b2
+#|   - b3
+#|   - b4
+#|   - b5
+```
+
+## Task 0: see it update
+
+<!-- Task 0 (kickoff): find your new title word here. You can remove this
+slide after the kickoff. -->
+
+```{r}
+#| label: fig-a0
+#| ref.label: a0
+#| fig-alt: "Bar chart counting the rows in each group of one column."
+```
+
+## Question
+
+<!-- One sentence, naming the groups you compare. -->
+WRITE: Is the 30-day hospital readmission rate different across gender and racial group ?
+
+## Data
+
+<!-- Where it's from, what one row is, how many rows. -->
+
+WRITE: where the data are from and what one row is. My Fairness file has
+`r scales::comma(nrow(fairness))` rows; My Fairness file contains hospital patient records. Each row represents one patient's hospital stay and includes demographic, treatment, and readmission information.My Sports file contains NFL Combine results. One row represents one player and includes position, athletic testing measurements, and draft information.
+`r scales::comma(nrow(sports))` rows.
+
+## WRITE: your headline
+
+<!-- State the finding in one sentence as this slide's heading, then the
+figure. By default it shows your A3 plot, the version you chose. -->
+
+```{r}
+#| label: fig-headline
+#| ref.label: a3-chosen
+#| fig-alt: "Bar charts show 30-day hospital readmission rates by gender within each racial group."
+```
+
+## What it shows, and its limits
+
+<!-- Differences, not causes; provenance, small groups, what the data can't
+tell us. -->
+- WRITE: The figure shows that 30-day readmission rates differ across racial groups and genders, but the figure only shows differences between groups and does not explain what causes those differences..
+- WRITE: The data come from a hospital readmissions dataset, with each row representing one patient hospitalization. Some racial groups have smaller sample sizes (shown by the n values in the panel labels), so their rates may be less stable than those of larger groups. The data cannot tell us why readmission rates differ, whether any group was treated unfairly, or whether other factors such as age, health conditions, insurance status, or access to care influenced the outcomes.
+## Sources and AI use
+
+<!-- Data citation; one-line AI statement (or "none"). -->
+
+- WRITE: Data citation (APA): NFL Combine Dataset. (n.d.). NFL Combine player performance data. Course dataset provided for CIS/Statistics assignment.
+ Hospital Readmissions Dataset. (n.d.). Hospital patient readmissions data. Course dataset provided for fairness analysis assignment.
+- WRITE: AI use: I used Copilot to help troubleshoot R code errors, explain assignment requirements, and check plot code for tasks A0–A5 and B1–B5.

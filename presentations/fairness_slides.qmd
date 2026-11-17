@@ -1,13 +1,13 @@
 ---
-title: "Fairness Data: your title here"
-author: "Your Name"
+title: "Gender Differences in 30-Day Hospital Readmissions"
+author: "Aubree Robinson"
 format: revealjs
 # The oral presentation (Fri, Dec 4) is about 7 minutes: plan about 1 minute per slide.
 ---
 
 ## Question
 
-Your question, and the groups you compare.
+Do 30-day hospital readmission rates differ by gender and race?
 
 ## Main figure
 
@@ -22,8 +22,7 @@ my_data <- read_csv("../data/tidy/your_file.csv")
 
 ## What it shows
 
-The differences between groups that the figure shows (differences, not causes).
-
+The figure shows that 30-day readmission rates vary across racial groups and genders. Some groups have higher readmission rates than others, but the figure only shows differences and does not explain what causes those differences.
 ## Limitations
 
-Provenance, small groups, and what the data cannot tell us.
+The data come from a hospital readmissions dataset, with one row representing a patient hospitalization. Some racial groups have smaller sample sizes (shown by the n values in the facet labels), so their rates may be less reliable. The data cannot determine why readmission rates differ or whether factors such as age, underlying health conditions, insurance status, or access to care contributed to the outcomes.

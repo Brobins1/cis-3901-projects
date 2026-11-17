@@ -2,30 +2,30 @@
   {
     "objectID": "presentations/sports_slides.html#question",
     "href": "presentations/sports_slides.html#question",
-    "title": "Sports Data: your title here",
+    "title": "NFL Combine Performance by Position",
     "section": "",
-    "text": "Your question about your sport, and the groups you compare."
+    "text": "How do NFL Combine performance measures differ across player positions, and which positions tend to have the fastest 40-yard dash times and highest vertical jumps?"
   },
   {
     "objectID": "presentations/sports_slides.html#main-figure",
     "href": "presentations/sports_slides.html#main-figure",
-    "title": "Sports Data: your title here",
+    "title": "NFL Combine Performance by Position",
     "section": "Main figure",
     "text": "Main figure\n\n\nCode\nlibrary(tidyverse)\n\nmy_data &lt;- read_csv(\"../data/tidy/your_file.csv\")\n# Your ggplot code here; add fig-cap and fig-alt"
   },
   {
     "objectID": "presentations/sports_slides.html#what-it-shows",
     "href": "presentations/sports_slides.html#what-it-shows",
-    "title": "Sports Data: your title here",
+    "title": "NFL Combine Performance by Position",
     "section": "What it shows",
-    "text": "What it shows\nThe patterns and differences that the figure shows."
+    "text": "What it shows\nThe figure shows a negative relationship between 40-yard dash time and vertical jump height. Positions such as wide receivers (WR), running backs (RB), and cornerbacks (CB) generally have faster dash times and higher vertical jumps, while offensive linemen tend to have slower dash times and lower vertical jumps. The position centers summarize the average performance for each group."
   },
   {
     "objectID": "presentations/sports_slides.html#limitations",
     "href": "presentations/sports_slides.html#limitations",
-    "title": "Sports Data: your title here",
+    "title": "NFL Combine Performance by Position",
     "section": "Limitations",
-    "text": "Limitations\nProvenance, small groups, and what the data cannot tell us."
+    "text": "Limitations\nThe data come from an NFL Combine dataset, with one row representing one player. Some positions have fewer players than others, so averages for smaller groups may be less reliable. The data cannot tell us why positions differ, whether training caused the differences, or how combine performance translates to success in NFL games."
   },
   {
     "objectID": "reports/sports_report.html",
@@ -184,23 +184,23 @@
   {
     "objectID": "presentations/fairness_slides.html#question",
     "href": "presentations/fairness_slides.html#question",
-    "title": "Fairness Data: your title here",
+    "title": "Gender Differences in 30-Day Hospital Readmissions",
     "section": "",
-    "text": "Your question, and the groups you compare."
+    "text": "Do 30-day hospital readmission rates differ by gender and race?"
   },
   {
     "objectID": "presentations/fairness_slides.html#main-figure",
     "href": "presentations/fairness_slides.html#main-figure",
-    "title": "Fairness Data: your title here",
+    "title": "Gender Differences in 30-Day Hospital Readmissions",
     "section": "Main figure",
     "text": "Main figure\n\n\nCode\nlibrary(tidyverse)\n\nmy_data &lt;- read_csv(\"../data/tidy/your_file.csv\")\n# Your ggplot code here; add fig-cap and fig-alt"
   },
   {
     "objectID": "presentations/fairness_slides.html#what-it-shows",
     "href": "presentations/fairness_slides.html#what-it-shows",
-    "title": "Fairness Data: your title here",
+    "title": "Gender Differences in 30-Day Hospital Readmissions",
     "section": "What it shows",
-    "text": "What it shows\nThe differences between groups that the figure shows (differences, not causes)."
+    "text": "What it shows\nThe figure shows that 30-day readmission rates vary across racial groups and genders. Some groups have higher readmission rates than others, but the figure only shows differences and does not explain what causes those differences. ## Limitations\nThe data come from a hospital readmissions dataset, with one row representing a patient hospitalization. Some racial groups have smaller sample sizes (shown by the n values in the facet labels), so their rates may be less reliable. The data cannot determine why readmission rates differ or whether factors such as age, underlying health conditions, insurance status, or access to care contributed to the outcomes."
   },
   {
     "objectID": "presentations/fairness_slides.html#limitations",
@@ -261,9 +261,9 @@
   {
     "objectID": "presentations/sports_slides.html",
     "href": "presentations/sports_slides.html",
-    "title": "Sports Data: your title here",
+    "title": "NFL Combine Performance by Position",
     "section": "",
-    "text": "Your question about your sport, and the groups you compare."
+    "text": "How do NFL Combine performance measures differ across player positions, and which positions tend to have the fastest 40-yard dash times and highest vertical jumps?"
   },
   {
     "objectID": "example/penguins_slides.html",
@@ -275,8 +275,113 @@
   {
     "objectID": "presentations/fairness_slides.html",
     "href": "presentations/fairness_slides.html",
-    "title": "Fairness Data: your title here",
+    "title": "Gender Differences in 30-Day Hospital Readmissions",
     "section": "",
-    "text": "Your question, and the groups you compare."
+    "text": "Do 30-day hospital readmission rates differ by gender and race?"
+  },
+  {
+    "objectID": "reports/gp13_report.html",
+    "href": "reports/gp13_report.html",
+    "title": "Guided Project: Scales and Facets",
+    "section": "",
+    "text": "ImportantEdit the code in the script. The report and the slides only read it.\n\n\n\nThe code lives in scripts/gp13_scales_facets.R. Your words (findings, headlines, limits) live in the report and the slides. Keep the code chunks here empty: on render, each one runs the script’s code, so code typed into them is ignored. Fix the code in the script."
+  },
+  {
+    "objectID": "reports/gp13_report.html#my-data",
+    "href": "reports/gp13_report.html#my-data",
+    "title": "Guided Project: Scales and Facets",
+    "section": "My data",
+    "text": "My data\nFairness Dataset: The Hospital Readmissions dataset contains patient hospitalization records. One row represents one hospital stay for a patient and includes information such as gender, race, medical conditions, medications, time in the hospital, and whether the patient was readmitted within 30 days. The dataset contains approximately 100,000 rows. The data come from a hospital readmissions study dataset provided for course analysis (see References).\nSports Dataset: The NFL Combine dataset contains performance measurements from football players who participated in the NFL Combine. One row represents one player and includes variables such as position, 40-yard dash time, vertical jump, broad jump, shuttle time, bench repetitions, and draft round. The dataset contains approximately 6,000 rows. The data come from NFL Combine records provided for course analysis (see References).\nHospital Readmissions Dataset. (n.d.). Hospital patient readmissions data. Course dataset provided by professor for educational use.\nNFL Combine Dataset. (n.d.). NFL Combine player performance data. Course dataset provided professor for educational use.\n\nput_in_place(\"fairness.csv\")\nput_in_place(\"sports.csv\")\n\nfairness &lt;- read_csv(\"data/fairness.csv\", show_col_types = FALSE)\nsports &lt;- read_csv(\"data/sports.csv\", show_col_types = FALSE)\n\nif (looks_damaged(fairness) || looks_damaged(sports)) {\n  stop(\"One of your data files looks damaged (each row in one column): it \",\n       \"may have been re-saved by a spreadsheet app. Ask your instructor \",\n       \"for a fresh copy.\", call. = FALSE)\n}\n\n# Your columns (\"values\" = how many different values: 2 to 4 suits\n# task 5). Never put a column of people's names in a plot.\nshow_columns(fairness)\n\n# A tibble: 22 × 4\n   column              type      values missing\n   &lt;chr&gt;               &lt;chr&gt;      &lt;int&gt;   &lt;int&gt;\n 1 encounter_id        numeric     5000       0\n 2 race                character      6       0\n 3 gender              character      3       0\n 4 age                 character      3       0\n 5 time_in_hospital    numeric       14       0\n 6 num_lab_procedures  numeric       99       0\n 7 num_procedures      numeric        7       0\n 8 num_medications     numeric       63       0\n 9 number_diagnoses    numeric       11       0\n10 primary_diagnosis   character      5       0\n11 max_glu_serum       character      4       0\n12 A1Cresult           character      4       0\n13 insulin             character      4       0\n14 change              character      2       0\n15 diabetesMed         character      2       0\n16 medicare            logical        2       0\n17 medicaid            logical        2       0\n18 had_emergency       logical        2       0\n19 had_inpatient_days  logical        2       0\n20 had_outpatient_days logical        2       0\n21 readmitted          character      3       0\n22 readmit_30_days     numeric        2       0\n\nshow_columns(sports)\n\n# A tibble: 8 × 4\n  column     type      values missing\n  &lt;chr&gt;      &lt;chr&gt;      &lt;int&gt;   &lt;int&gt;\n1 position   character     19       0\n2 Round      numeric        8    2105\n3 forty      numeric      158     377\n4 vertical   numeric       59    1163\n5 bench_reps numeric       46    1820\n6 broad_jump numeric       64    1237\n7 three_cone numeric      214    2143\n8 shuttle    numeric      149    2035\n\n# PART A · FAIRNESS ==========================================================\n\n# A0 · See it update ---------------------------------------------------------\n# A ready count plot of one of your Fairness columns. Nothing to code.\n# YOUR TURN (kickoff): change one word in the title, then render the report\n# and the slides, and find your word on both pages."
+  },
+  {
+    "objectID": "reports/gp13_report.html#part-a-fairness",
+    "href": "reports/gp13_report.html#part-a-fairness",
+    "title": "Guided Project: Scales and Facets",
+    "section": "Part A · Fairness",
+    "text": "Part A · Fairness\n\nA0 · See it update\n\na0_column &lt;- pick_a_column(fairness)\n\na0 &lt;- ggplot(fairness, aes(y = .data[[a0_column]])) +\n  geom_bar() +\n  labs(\n    title = \"My hospital plot\",\n    x = \"Count\",\n    y = a0_column\n  )\n\nshow_plot(a0)\n\n\n\n\n\n\n\nFigure 1: My first plot: a count of one of my Fairness columns.\n\n\n\n\n\nWRITE (1 sentence):The title change appeared in both the report and the slides after rendering, confirming that the update was applied successfully.\n\n\nA1 · Label it\n\na_data &lt;- fairness %&gt;%\n  mutate(\n    group = gender,\n    has_outcome = readmit_30_days == 1\n  )\n\na1_base &lt;-  ggplot (a_data,\n    aes(y = group, fill = has_outcome))+\n  geom_bar(position = \"fill\")\n\na1 &lt;- a1_base +\n  labs(\n    title = \"30-day readmission rate by gender\",\n    subtitle = paste(\"Fairness dataset (n =\", nrow(a_data), \")\"),\n    x = \"Percentage of patients\",\n    y = \"Gender\",\n    fill = \"Readmitted within 30 days\"\n  ) +\n  scale_x_continuous(labels = scales::percent)\n\nshow_plot(a1)\n\n\n\n\n\n\n\nFigure 2: Share of each group with the outcome, labeled for a reader.\n\n\n\n\n\nWRITE (2 sentences): Which label did you change most, and why? Could a reader understand this plot without you there?\nI changed the title the most because it needed to clearly explain that the plot shows 30-day readmission rates by gender and help readers understand the purpose of the chart immediately.\nYes. The title, subtitle, legend, and axis labels clearly identify the groups being compared and explain that the chart shows the percentage of patients readmitted within 30 days. ### A2 · Choose a scale\n\na2 &lt;- NULL\n# YOUR TURN: remove the # signs below, then replace each ___.\n  a2 &lt;- fairness %&gt;%\n  filter(num_lab_procedures &gt; 0) %&gt;%\n  ggplot(aes(x = num_lab_procedures)) +\n  geom_histogram(bins = 30) +\n  scale_x_log10(labels = scales::comma) +\n  labs(title = \"Distribution of Lab Procedures\", x = \"Number of Lab Procedures (units, log scale)\", y = \"Count\")\n\n# YOUR TURN: one sentence. Why this scale for this column?\na2_reason &lt;- \"I used log scale because num_lab_procedures is skewed, with many small vaules and fewer larger values.\"\n\nshow_plot(a2)\n\n\n\n{#fig-a2 fig-alt=’ Histogram showing the distribution of the number of lab procedures, displayed on a logarithmic x-axis.’ width=672}\n\n\n\n\nWRITE (2–3 sentences): Which scale, and why? What does a reader see with it that they wouldn’t see without it? If values were removed (0 or below on a log scale), say how many.\nI used a log scale because num_lab_procedures is right-skewed, with many observations at lower values and fewer observations at higher values. The log scale spreads out the smaller values and compresses the larger values, making the overall distribution easier to see. Values of 0 or less cannot be displayed on a log scale, so I filtered those values out before creating the plot.\n\n\nA3 · Facet it: fixed or free\n\n# YOUR TURN 1: replace \"replace me\" with your second column (no quotes).\na3_rates &lt;- a_data %&gt;%\n  mutate(panel = race) %&gt;%\n  drop_na(has_outcome) %&gt;%\n  add_count(panel, name = \"panel_n\") %&gt;%\n  mutate(panel = paste0(panel, \" (n = \", scales::comma(panel_n), \")\")) %&gt;%\n  group_by(panel, group) %&gt;%\n  summarize(n = n(), rate = mean(has_outcome), .groups = \"drop\")\n\na3_fixed &lt;- ggplot(a3_rates, aes(x = group, y = rate)) +\n  geom_col() +\n  facet_wrap(vars(panel)) +\n  scale_y_continuous(labels = scales::percent) +\n  labs(\n    title = \"30-day readmission rate by gender and race\",\n    x = \"Gender\",\n    y = \"Readmission rate (%)\"\n  )\n\na3_free &lt;- a3_fixed +\n  facet_wrap(vars(panel), scales = \"free_y\")\n\n# YOUR TURN 2: remove the # signs below, then replace each ___.\n# a3_fixed &lt;- ggplot(a3_rates, aes(x = group, y = rate)) +\n#   geom_col() +\n#   facet_wrap(vars(panel)) +\n#   scale_y_continuous(labels = scales::percent) +\n#   labs(title = \"___\", x = \"___\", y = \"___ (%)\")\n# a3_free &lt;- a3_fixed +\n#   facet_wrap(vars(panel), scales = \"free_y\")\n\n# YOUR TURN 3: which one would you publish, \"fixed\" or \"free_y\"? Why?\na3_choice &lt;- \"fixed\"\na3_reason &lt;- \"A fixed y-axis makes it easier and more accurate to compare readmission rates across panels.\"\nshow_plot(a3_fixed)\nshow_plot(a3_free)\n\n\n\n\n\n\n\n\n\n\n\n(a) Fixed\n\n\n\n\n\n\n\n\n\n\n\n(b) Free\n\n\n\n\n\n\n\nFigure 3: The same rates in panels: fixed and free y-axes.\n\n\n\n\n\n\n\n\nTable 1: Each group’s n and rate, by panel.\n\n\n\n\n\n\npanel\ngroup\nn\nrate\n\n\n\n\nAfricanAmerican (n = 944)\nFemale\n577\n0.111\n\n\nAfricanAmerican (n = 944)\nMale\n367\n0.114\n\n\nAsian (n = 31)\nFemale\n15\n0.067\n\n\nAsian (n = 31)\nMale\n16\n0.125\n\n\nCaucasian (n = 3,737)\nFemale\n1948\n0.115\n\n\nCaucasian (n = 3,737)\nMale\n1789\n0.111\n\n\nHispanic (n = 100)\nFemale\n53\n0.094\n\n\nHispanic (n = 100)\nMale\n47\n0.128\n\n\nOther (n = 75)\nFemale\n37\n0.108\n\n\nOther (n = 75)\nMale\n37\n0.081\n\n\nOther (n = 75)\nUnknown/Invalid\n1\n0.000\n\n\nUnknown (n = 113)\nFemale\n55\n0.073\n\n\nUnknown (n = 113)\nMale\n57\n0.088\n\n\nUnknown (n = 113)\nUnknown/Invalid\n1\n0.000\n\n\n\n\n\n\n\n\nWRITE (3–4 sentences): Fixed or free? What does the reader gain, and what do they lose? Which panels or groups are small, and what is their n? Describe differences, not causes.\nI would publish the fixed version because all panels use the same y-axis scale, making it easier to compare readmission rates across racial groups. Readers gain more accurate comparisons between panels, although small differences may be harder to see than in the free-scale version. The sample sizes for each racial group are shown in the panel labels as n values, and groups with smaller sample sizes should be interpreted more cautiously. The figure shows differences in readmission rates across gender and race groups, but it does not explain the causes of those differences.\n\n\nA4 · Compared to what?\n\na4_clouds &lt;- a_data %&gt;%\n  filter(group %in% c(\"Male\", \"Female\")) %&gt;%\n  make_clouds(group, num_medications)\n\n# YOUR TURN 1: remove the # signs below, then replace each ___: the column\n# with your groups, two of its values, and your numeric column.\n# a4_clouds &lt;- a_data %&gt;%\n#   filter(___ %in% c(\"___\", \"___\")) %&gt;%\n#   make_clouds(___, ___)\n\na4 &lt;- ggplot(a4_clouds, aes(x = group, y = value)) +\n  geom_jitter(width = 0.15, height = 0, alpha = 0.2) +\n  facet_wrap(~ kind) +\n  labs(\n    title = \"Number of medications by gender\",\n    x = \"Gender\",\n    y = \"Number of medications\"\n  )\n# YOUR TURN 2: remove the # signs below, then replace each ___.\n# a4 &lt;- ggplot(a4_clouds, aes(x = group, y = value)) +\n#   geom_jitter(width = 0.15, height = 0, alpha = 0.2) +\n#   facet_wrap(~ kind) +\n#   labs(title = \"___\", x = \"___\", y = \"___ (units)\")\n\nshow_plot(a4)\n\n\n\n\n\n\n\nFigure 4: Two groups: individual values and resampled means, same axes.\n\n\n\n\n\nWRITE (2–3 sentences): Do the clouds overlap? What does that say about individuals versus the group means?The left panel shows the individual numbers of medications for male and female patients, while the right panel shows the distribution of resampled group means. Comparing the panels suggests whether the difference between the groups is large relative to the variation in the data.\nThe individual values show the spread and overlap of the data, while the resampled means show how much the group average could change with a different sample. This helps readers judge whether the difference between the groups is substantial or small compared with normal sampling variation.\n\n\nA5 · Color for every reader\na5 &lt;- ggplot(a_data, aes(y = group, fill = group)) +\n  geom_bar() +\n  scale_fill_viridis_d(end = 0.8) +\n  labs(\n    title = \"Patient count by gender\",\n    x = \"Count\",\n    y = \"Gender\",\n    fill = \"Gender\"\n  )\n\n# YOUR TURN: remove the # signs below, then replace each ___ (the same\n# column in both places, so its name is on the axis too).\n# a5 &lt;- ggplot(a_data, aes(y = ___, fill = ___)) +\n#   geom_bar() +\n#   scale_fill_viridis_d(end = 0.8) +\n#   labs(title = \"___\", x = \"Count\", y = \"___\", fill = \"___\")\n\nshow_plot(a5)\n# See it: your plot as a reader with red-green color blindness might see it.\nshow_plot(simulate_plot(a5, \"Red-green (deuteranopia)\"))\n\n\n\n\n\n\n\n\n\n\n\n(a) My plot\n\n\n\n\n\n\n\n\n\n\n\n(b) Red-green (deuteranopia), simulated\n\n\n\n\n\n\n\nFigure 5: My colors, with a second cue, and how a reader with red-green color blindness might see them.\n\n\n\n\ncolor_check(a5)\n\n3 colors. The red-green simulations come from a validated model;\nthe blue-yellow one is an approximation.\n\n\n# A tibble: 3 × 3\n  view                      smallest_difference at_least_20\n  &lt;chr&gt;                                   &lt;dbl&gt; &lt;chr&gt;      \n1 Red-green (deuteranopia)                 30.5 Yes        \n2 Red-green (protanopia)                   41.1 Yes        \n3 Blue-yellow (approximate)                29.7 Yes        \n\n\nshow_plot(simulate_plot(a5, \"Red-green (protanopia)\"))\nshow_plot(simulate_plot(a5, \"Blue-yellow (approximate)\"))\n\n\n\n\n\n\n\n\n\n\n\n(a) Red-green (protanopia), simulated\n\n\n\n\n\n\n\n\n\n\n\n(b) Blue-yellow (approximate), simulated\n\n\n\n\n\n\n\nFigure 6: The other two simulated views.\n\n\n\nWRITE (2–4 sentences): Explain your colors. Say which column you colored by and why. If your first choice failed the color check, say what you changed: fewer categories, grouping rare ones, or panels. Then look at your simulated plot: can you still tell the categories apart?\nI colored the plot by gender because gender is the group variable being compared in this analysis. I used scale_fill_viridis_d() because it provides colors that are easier for readers with color-vision deficiencies to distinguish. Since there are only two categories (Male and Female), I did not need to combine groups or use panels. In the simulated color-blind views, the categories remain easy to tell apart because the colors are distinct and gender is also shown on the y-axis."
+  },
+  {
+    "objectID": "reports/gp13_report.html#part-b-sports",
+    "href": "reports/gp13_report.html#part-b-sports",
+    "title": "Guided Project: Scales and Facets",
+    "section": "Part B · Sports",
+    "text": "Part B · Sports\n\nB1 · Label it\n\nb_data &lt;- sports %&gt;%\n  mutate(\n    group = position,\n    has_outcome = FALSE,\n    value = forty\n  )\n\nb1_base &lt;- ggplot(\n  sports,\n  aes(x = forty, y = vertical, color = position)\n) +\n  geom_point(alpha = 0.3)\n\nb1 &lt;- b1_base +\n  labs(\n    title = \"40-Yard Dash Time and Vertical Jump by Position\",\n    subtitle = \"NFL Combine athletes grouped by playing position\",\n    x = \"40-Yard Dash Time (seconds)\",\n    y = \"Vertical Jump (inches)\"\n  )\n\nshow_plot(b1)\n\n\n\n\n\n\n\nFigure 7: My Sports plot, labeled for a reader.\n\n\n\n\n\nWRITE (2 sentences): What does the plot show? Which label helps a reader most?\nThe plot shows the relationship between 40-yard dash time and vertical jump height for NFL Combine players, with colors indicating different playing positions. The title helps a reader the most because it clearly identifies the two variables being compared and the groups represented in the plot ### B2 · Choose a scale\n\nb2 &lt;- ggplot(sports, aes(x = forty)) +\n  geom_histogram(bins = 30) +\n  scale_x_log10() +\n  labs(\n    title = \"Distribution of 40-Yard Dash Times (Log Scale)\",\n    x = \"40-Yard Dash Time (seconds, log scale)\",\n    y = \"Count\"\n  )\n\nb2_reason &lt;- \"I used a log scale because the forty-yard dash times are somewhat right-skewed, and the log transformation makes the distribution easier to see by reducing the influence of extreme values.\"\n\nshow_plot(b2)\n\n\n\n\n\n\n\nFigure 8: My scale choice.\n\n\n\n\n\nWRITE (2–3 sentences): Which scale, and why? If values were removed, say how many.\nI used a log scale because the 40-yard dash times are somewhat right-skewed, with most players clustered in a narrow range and a few slower times extending the distribution. The log scale reduces the influence of extreme values and makes the overall distribution easier to see. No values were removed because all 40-yard dash times are positive and can be displayed on a log scale.\n\n\nB3 · Facet it: fixed or free\n\nposition_counts &lt;- sports %&gt;%\n  count(position) %&gt;%\n  mutate(label = paste0(position, \"\\n(n = \", n, \")\"))\n\nsports_b3 &lt;- sports %&gt;%\n  left_join(position_counts, by = \"position\")\n\nb3_fixed &lt;- ggplot(sports_b3,\n                   aes(x = forty, y = vertical)) +\n  geom_point(alpha = 0.3) +\n  facet_wrap(~ label)\n\nb3_free &lt;- ggplot(sports_b3,\n                  aes(x = forty, y = vertical)) +\n  geom_point(alpha = 0.3) +\n  facet_wrap(~ label, scales = \"free\")\n\nb3_choice &lt;- \"fixed\"\n\nb3_reason &lt;- \"I chose fixed scales because they make it easier to compare the relationship between forty-yard dash time and vertical jump across positions using the same axes.\"\n\nshow_plot(b3_fixed)\nshow_plot(b3_free)\n\n\n\n\n\n\n\n\n\n\n\n(a) Fixed\n\n\n\n\n\n\n\n\n\n\n\n(b) Free\n\n\n\n\n\n\n\nFigure 9: The same plot in panels: fixed and free y-axes.\n\n\n\n\nWRITE (3–4 sentences): Fixed or free? What does the reader gain, and what do they lose? Which panels are small, and what is their n? Differences, not causes.\nI would publish the fixed version because all panels use the same axes, making it easier to compare player positions directly. Readers gain more accurate comparisons between positions, although some position-specific patterns may be less noticeable than in the free-scale version. The panel labels include the sample size (n) for each position, and positions with smaller sample sizes should be interpreted more cautiously because they have fewer observations. The plots show differences in 40-yard dash times and vertical jump heights across positions, but they do not explain the causes of those differences.\n\n\nB4 · Compared to what?\n\nb4_clouds &lt;- make_clouds(\n  sports %&gt;% filter(position %in% c(\"WR\", \"RB\")),\n  position,\n  vertical\n)\n\nb4 &lt;- ggplot(b4_clouds, aes(x = group, y = value, fill = group)) +\n  geom_boxplot(alpha = 0.6) +\n  facet_wrap(~ kind) +\n  labs(\n    title = \"Comparison of WR and RB Players\",\n    x = \"Position\",\n    y = \"Value\"\n  )\n\nshow_plot(b4)\n\n\n\n\n\n\n\nFigure 10: Two groups: individual values and resampled means, same axes.\n\n\n\n\n\nWRITE (2–3 sentences): Do the clouds overlap? What does that say about individuals versus the group means?\nThe clouds overlap, which indicates that many individual wide receivers and running backs have similar vertical jump measurements. The resampled means overlap less than the individual values, making differences between the average performance of the two groups easier to see. This suggests that while individual players may be similar, the group averages can still differ.\n\n\nB5 · Color for every reader\nb5_data &lt;- sports %&gt;%\n  filter(position %in% c(\"WR\", \"RB\"))\n\nb5 &lt;- ggplot(\n  b5_data,\n  aes(x = position, y = vertical, fill = position)\n) +\n  geom_boxplot() +\n  scale_fill_brewer(palette = \"Dark2\") +\n  labs(\n    title = \"Vertical Jump by Position\",\n    x = \"Position\",\n    y = \"Vertical Jump (inches)\"\n  )\n\nshow_plot(b5)\nshow_plot(simulate_plot(b5, \"Red-green (deuteranopia)\"))\n\n\n\n\n\n\n\n\n\n\n\n(a) My plot\n\n\n\n\n\n\n\n\n\n\n\n(b) Red-green (deuteranopia), simulated\n\n\n\n\n\n\n\nFigure 11: My colors, with a second cue, and how a reader with red-green color blindness might see them.\n\n\n\n\ncolor_check(b5)\n\n2 colors. The red-green simulations come from a validated model;\nthe blue-yellow one is an approximation.\n\n\n# A tibble: 3 × 3\n  view                      smallest_difference at_least_20\n  &lt;chr&gt;                                   &lt;dbl&gt; &lt;chr&gt;      \n1 Red-green (deuteranopia)                 55.7 Yes        \n2 Red-green (protanopia)                   39.5 Yes        \n3 Blue-yellow (approximate)               110.  Yes        \n\n\nshow_plot(simulate_plot(b5, \"Red-green (protanopia)\"))\nshow_plot(simulate_plot(b5, \"Blue-yellow (approximate)\"))\n\n\n\n\n\n\n\n\n\n\n\n(a) Red-green (protanopia), simulated\n\n\n\n\n\n\n\n\n\n\n\n(b) Blue-yellow (approximate), simulated\n\n\n\n\n\n\n\nFigure 12: The other two simulated views.\n\n\n\nWRITE (2–4 sentences): Explain your colors. Say which column you colored by and why. If your first choice failed the color check, say what you changed: fewer categories, grouping rare ones, or panels. Then look at your simulated plot: can you still tell the categories apart?\nI colored the plot by position because the goal is to compare wide receivers (WR) and running backs (RB). I limited the plot to these two positions after reducing the number of categories, which makes the colors easier to distinguish and improves accessibility. The Dark2 palette provides good contrast, and position is also shown on the x-axis as a second cue. In the simulated color-blind views, the two categories are still easy to tell apart."
+  },
+  {
+    "objectID": "reports/gp13_report.html#one-thing-i-tried-in-my-slides-and-why",
+    "href": "reports/gp13_report.html#one-thing-i-tried-in-my-slides-and-why",
+    "title": "Guided Project: Scales and Facets",
+    "section": "One thing I tried in my slides, and why",
+    "text": "One thing I tried in my slides, and why\nWRITE (2–3 sentences): One idea of your own in your slides (an angle, a comparison, an order, an annotation), and how it helps a reader see the finding.\nOne idea I used in my slides was comparing NFL Combine performance by player position using facets and group summaries. This helps readers see how positions differ in 40-yard dash times and vertical jump heights while keeping the comparisons organized and easy to follow. Showing the average values for each position also makes the overall patterns easier to understand than looking at individual player data alone."
+  },
+  {
+    "objectID": "reports/gp13_report.html#revision-log",
+    "href": "reports/gp13_report.html#revision-log",
+    "title": "Guided Project: Scales and Facets",
+    "section": "Revision log",
+    "text": "Revision log\n\nFill this in for the final: three to five changes to your report or slides. For each: what changed, why, and which idea from Module 14 it uses.\n\n\n\n\n\n\n\n\nChange\nWhy\nModule 14 idea\n\n\n\n\nAdded clearer titles and axis labels to all fairness and sports plots.\nThis makes the plots easier to understand without additional explanation\nLabel plots for the reader.\n\n\n\n|Switched to a fixed y-axis for the faceted readmission-rate plots. |It allows readers to compare rates across groups more accurately. |Fixed vs. free scales in faceted plots. |\n|Added sample sizes (n) to facet labels and group labels. |Readers can see which groups have fewer observations and interpret results more carefully. |Show counts and provide context for group comparisons. |"
+  },
+  {
+    "objectID": "reports/gp13_report.html#checks",
+    "href": "reports/gp13_report.html#checks",
+    "title": "Guided Project: Scales and Facets",
+    "section": "Checks",
+    "text": "Checks\n\n\n\n\nTable 2: Every task’s check, at the time this page was rendered.\n\n\n\n\n\n\ntask\nstatus\n\n\n\n\nA0\nsee the reminder\n\n\nA1\nPASS\n\n\nA2\nPASS\n\n\nA3\nPASS\n\n\nA4\nPASS\n\n\nA5\nPASS\n\n\nB1\nPASS\n\n\nB2\nPASS\n\n\nB3\nPASS\n\n\nB4\nPASS\n\n\nB5\nPASS"
+  },
+  {
+    "objectID": "reports/gp13_report.html#ai-use",
+    "href": "reports/gp13_report.html#ai-use",
+    "title": "Guided Project: Scales and Facets",
+    "section": "AI use",
+    "text": "AI use\nWRITE: one public line only: “AI use: I used [tool] to [what for].” or “AI use: none.” (Your AI log and conversations go in Blackboard, never here: I used Microsoft Copilot to troubleshoot R code errors, explain assignment requirements, and help improve the labels, accessibility, and interpretations of my plots. Guided Project page.)"
+  },
+  {
+    "objectID": "reports/gp13_report.html#references",
+    "href": "reports/gp13_report.html#references",
+    "title": "Guided Project: Scales and Facets",
+    "section": "References",
+    "text": "References\nWRITE: APA references for your Fairness dataset (Fairlearn and the original source) and your Sports dataset (its SCORE page). Fairlearn. (n.d.). Diabetes 130-US hospitals for years 1999–2008 data set [Data set]. Fairlearn. Original source: Strack, B., DeShazo, J. P., Gennings, C., Olmo, J. L., Ventura, S., Cios, K. J., & Clore, J. N. (2014). Impact of HbA1c measurement on hospital readmission rates: Analysis of 70,000 clinical database patient records. BioMed Research International, 2014, Article 781670. https://doi.org/10.1155/2014/781670\nSCORE Network. (n.d.). NFL Combine data set [Data set]. SCORE course data repository."
+  },
+  {
+    "objectID": "presentations/gp13_slides.html",
+    "href": "presentations/gp13_slides.html",
+    "title": "Gender Differences in 30-Day Hospital Readmissions",
+    "section": "",
+    "text": "Figure 1"
+  },
+  {
+    "objectID": "presentations/gp13_slides.html#task-0-see-it-update",
+    "href": "presentations/gp13_slides.html#task-0-see-it-update",
+    "title": "Gender Differences in 30-Day Hospital Readmissions",
+    "section": "Task 0: see it update",
+    "text": "Task 0: see it update\n\n\n\nFigure 1"
+  },
+  {
+    "objectID": "presentations/gp13_slides.html#question",
+    "href": "presentations/gp13_slides.html#question",
+    "title": "Gender Differences in 30-Day Hospital Readmissions",
+    "section": "Question",
+    "text": "Question\n\nWRITE: Is the 30-day hospital readmission rate different across gender and racial group ?"
+  },
+  {
+    "objectID": "presentations/gp13_slides.html#data",
+    "href": "presentations/gp13_slides.html#data",
+    "title": "Gender Differences in 30-Day Hospital Readmissions",
+    "section": "Data",
+    "text": "Data\n\nWRITE: where the data are from and what one row is. My Fairness file has 5,000 rows; My Fairness file contains hospital patient records. Each row represents one patient’s hospital stay and includes demographic, treatment, and readmission information.My Sports file contains NFL Combine results. One row represents one player and includes position, athletic testing measurements, and draft information. 6,128 rows."
+  },
+  {
+    "objectID": "presentations/gp13_slides.html#write-your-headline",
+    "href": "presentations/gp13_slides.html#write-your-headline",
+    "title": "Gender Differences in 30-Day Hospital Readmissions",
+    "section": "WRITE: your headline",
+    "text": "WRITE: your headline\n\n\n\nFigure 2"
+  },
+  {
+    "objectID": "presentations/gp13_slides.html#what-it-shows-and-its-limits",
+    "href": "presentations/gp13_slides.html#what-it-shows-and-its-limits",
+    "title": "Gender Differences in 30-Day Hospital Readmissions",
+    "section": "What it shows, and its limits",
+    "text": "What it shows, and its limits\n\n\nWRITE: The figure shows that 30-day readmission rates differ across racial groups and genders, but the figure only shows differences between groups and does not explain what causes those differences..\nWRITE: The data come from a hospital readmissions dataset, with each row representing one patient hospitalization. Some racial groups have smaller sample sizes (shown by the n values in the panel labels), so their rates may be less stable than those of larger groups. The data cannot tell us why readmission rates differ, whether any group was treated unfairly, or whether other factors such as age, health conditions, insurance status, or access to care influenced the outcomes. ## Sources and AI use\n\n\n\nWRITE: Data citation (APA): NFL Combine Dataset. (n.d.). NFL Combine player performance data. Course dataset provided for CIS/Statistics assignment. Hospital Readmissions Dataset. (n.d.). Hospital patient readmissions data. Course dataset provided for fairness analysis assignment.\nWRITE: AI use: I used Copilot to help troubleshoot R code errors, explain assignment requirements, and check plot code for tasks A0–A5 and B1–B5."
   }
 ]
